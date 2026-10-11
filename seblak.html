@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Seblak Mantul | Racik Seblak Favoritmu</title>
+  <meta name="description" content="Pesan seblak favoritmu, pilih topping, kuah, level pedas, dan cara penyajian.">
+
+  <link rel="stylesheet" href="seblak.css">
+  <script src="seblak.js" defer></script>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="#" class="brand">
+      <span class="brand-icon">🌶️</span>
+      <span>Seblak<span class="brand-accent">Mantul</span></span>
+    </a>
+
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#pesanan">Pesanan</a>
+      <a href="#ulasan">Ulasan</a>
+    </nav>
+
+    <a href="#pesanan" class="nav-button">Pesan Sekarang</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">🔥 PEDASNYA SESUAI SELERAMU</span>
+
+        <h1>Seblak Enak,<br><span>Bikin Ketagihan!</span></h1>
+
+        <p>
+          Racik seblak impianmu sendiri. Pilih kuah,
+          topping favorit, dan level pedas sesukamu!
+        </p>
+
+        <a href="#menu" class="primary-button">
+          Racik Seblakku <span>→</span>
+        </a>
+
+        <div class="hero-features">
+          <span>✓ Banyak topping</span>
+          <span>✓ Harga terjangkau</span>
+          <span>✓ Bisa dibungkus</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Ilustrasi seblak">
+        <div class="hero-circle"></div>
+        <div class="hero-food">🍲</div>
+        <span class="floating floating-one">🌶️</span>
+        <span class="floating floating-two">🍜</span>
+        <span class="floating floating-three">✨</span>
+        <div class="hero-sticker">
+          <strong>100%</strong>
+          <span>Selera Kamu!</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div>
+        <span>🍜</span>
+        <div>
+          <strong>Racik Sendiri</strong>
+          <small>Bebas pilih topping</small>
+        </div>
+      </div>
+
+      <div>
+        <span>🌶️</span>
+        <div>
+          <strong>Atur Pedasnya</strong>
+          <small>Level 0 sampai 5</small>
+        </div>
+      </div>
+
+      <div>
+        <span>🛍️</span>
+        <div>
+          <strong>Praktis</strong>
+          <small>Makan di tempat atau bungkus</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <span class="eyebrow">YOUR FOOD, YOUR RULES</span>
+        <h2>Yuk, Racik Seblakmu!</h2>
+        <p>Pilih sesuai selera. Kamu bisa menambah beberapa racikan sekaligus dalam satu pesanan.</p>
+      </div>
+
+      <div class="order-layout">
+        <div class="customizer">
+
+          <section class="panel">
+            <div class="step-heading">
+              <span class="step-number">01</span>
+              <div>
+                <h3>Pilih Kuah</h3>
+                <p>Bagaimana tekstur kuah favoritmu?</p>
+              </div>
+            </div>
+
+            <div class="choice-grid">
+              <label class="choice-card">
+                <input type="radio" name="kuah"
+                       value="Nyemek" checked>
+                <span class="choice-emoji">🥘</span>
+                <strong>Nyemek</strong>
+                <small>Kuah sedikit, bumbu meresap</small>
+              </label>
+
+              <label class="choice-card">
+                <input type="radio" name="kuah"
+                       value="Banyak Kuah">
+                <span class="choice-emoji">🍲</span>
+                <strong>Banyak Kuah</strong>
+                <small>Kuah melimpah</small>
+              </label>
+
+              <label class="choice-card">
+                <input type="radio" name="kuah"
+                       value="Kering">
+                <span class="choice-emoji">🍛</span>
+                <strong>Kering</strong>
+                <small>Tanpa kuah, bumbu pekat</small>
+              </label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="step-heading">
+              <span class="step-number">02</span>
+              <div>
+                <h3>Pilih Topping</h3>
+                <p>Pilih sebanyak yang kamu mau!</p>
+              </div>
+            </div>
+
+            <div class="topping-grid">
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Kerupuk" data-harga="2000">
+                <span class="food-emoji">🍘</span>
+                <span class="food-name">Kerupuk</span>
+                <span class="food-price">Rp2.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Mie" data-harga="3000">
+                <span class="food-emoji">🍜</span>
+                <span class="food-name">Mie</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Makaroni" data-harga="2000">
+                <span class="food-emoji">🍝</span>
+                <span class="food-name">Makaroni</span>
+                <span class="food-price">Rp2.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Bakso" data-harga="3000">
+                <span class="food-emoji">🍡</span>
+                <span class="food-name">Bakso</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Sosis" data-harga="3000">
+                <span class="food-emoji">🌭</span>
+                <span class="food-name">Sosis</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Ceker" data-harga="4000">
+                <span class="food-emoji">🍗</span>
+                <span class="food-name">Ceker</span>
+                <span class="food-price">Rp4.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Telur" data-harga="3000">
+                <span class="food-emoji">🥚</span>
+                <span class="food-name">Telur</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Dumpling" data-harga="4000">
+                <span class="food-emoji">🥟</span>
+                <span class="food-name">Dumpling</span>
+                <span class="food-price">Rp4.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Cuanki" data-harga="3000">
+                <span class="food-emoji">🍢</span>
+                <span class="food-name">Cuanki</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Tahu" data-harga="2000">
+                <span class="food-emoji">🧈</span>
+                <span class="food-name">Tahu</span>
+                <span class="food-price">Rp2.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Sayuran" data-harga="2000">
+                <span class="food-emoji">🥬</span>
+                <span class="food-name">Sayuran</span>
+                <span class="food-price">Rp2.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Chikuwa" data-harga="3000">
+                <span class="food-emoji">🍥</span>
+                <span class="food-name">Chikuwa</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Odeng" data-harga="3000">
+                <span class="food-emoji">🍢</span>
+                <span class="food-name">Odeng</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Crab Stick" data-harga="3000">
+                <span class="food-emoji">🦀</span>
+                <span class="food-name">Crab Stick</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Jamur Enoki" data-harga="3000">
+                <span class="food-emoji">🍄</span>
+                <span class="food-name">Jamur Enoki</span>
+                <span class="food-price">Rp3.000</span>
+              </label>
+
+              <label class="topping-card">
+                <input type="checkbox" name="topping"
+                       value="Cilok" data-harga="2000">
+                <span class="food-emoji">🟤</span>
+                <span class="food-name">Cilok</span>
+                <span class="food-price">Rp2.000</span>
+              </label>
+
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="step-heading">
+              <span class="step-number">03</span>
+              <div>
+                <h3>Atur Level Pedas</h3>
+                <p>Berani sampai level berapa?</p>
+              </div>
+            </div>
+
+            <div class="spice-grid">
+              <label class="spice-option">
+                <input type="radio" name="level" value="0" checked>
+                <strong>0</strong>
+                <small>Original</small>
+              </label>
+
+              <label class="spice-option">
+                <input type="radio" name="level" value="1">
+                <strong>1</strong>
+                <small>Ringan</small>
+              </label>
+
+              <label class="spice-option">
+                <input type="radio" name="level" value="2">
+                <strong>2</strong>
+                <small>Sedang</small>
+              </label>
+
+              <label class="spice-option">
+                <input type="radio" name="level" value="3">
+                <strong>3</strong>
+                <small>Pedas</small>
+              </label>
+
+              <label class="spice-option">
+                <input type="radio" name="level" value="4">
+                <strong>4</strong>
+                <small>Ekstra</small>
+              </label>
+
+              <label class="spice-option">
+                <input type="radio" name="level" value="5">
+                <strong>5</strong>
+                <small>Maksimal</small>
+              </label>
+            </div>
+
+            <p class="spice-note" id="teksPedas">
+              😊 Level 0 — tidak pedas.
+            </p>
+          </section>
+
+          <section class="panel">
+            <div class="step-heading">
+              <span class="step-number">04</span>
+              <div>
+                <h3>Mau Makan di Mana?</h3>
+                <p>Pilih cara penyajian pesananmu.</p>
+              </div>
+            </div>
+
+            <div class="serving-grid">
+              <label class="serving-card">
+                <input type="radio" name="penyajian"
+                       value="Makan di tempat" checked>
+                <span>🪑</span>
+                <strong>Makan di Tempat</strong>
+                <small>Nikmati langsung di kedai</small>
+              </label>
+
+              <label class="serving-card">
+                <input type="radio" name="penyajian"
+                       value="Dibungkus">
+                <span>🛍️</span>
+                <strong>Dibungkus</strong>
+                <small>Praktis dibawa pulang</small>
+              </label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="step-heading">
+              <span class="step-number">05</span>
+              <div>
+                <h3>Data Pemesan</h3>
+                <p>Isi data untuk menyelesaikan pesanan.</p>
+              </div>
+            </div>
+
+            <label class="field-label" for="nama">Nama kamu</label>
+            <input class="text-input" id="nama" type="text"
+                   placeholder="Masukkan nama lengkap"
+                   maxlength="80" autocomplete="name">
+
+            <label class="field-label" for="jumlah">Jumlah porsi (racikan ini)</label>
+            <div class="quantity-control">
+              <button type="button" id="kurangiJumlah"
+                      aria-label="Kurangi porsi">−</button>
+              <input id="jumlah" type="number"
+                     value="1" min="1" max="99">
+              <button type="button" id="tambahJumlah"
+                      aria-label="Tambah porsi">+</button>
+            </div>
+
+            <label class="field-label" for="catatan">
+              Catatan racikan ini (opsional)
+            </label>
+            <textarea class="text-input" id="catatan"
+                      rows="3" maxlength="300"
+                      placeholder="Contoh: kuah dipisah, tidak pakai sayur"></textarea>
+          </section>
+        </div>
+
+        <aside class="cart-panel" id="pesanan">
+          <div class="cart-title">
+            <span class="cart-icon">🛒</span>
+            <div>
+              <h3>Ringkasan Pesanan</h3>
+              <p>Racik sebanyak yang kamu mau</p>
+            </div>
+          </div>
+
+          <div class="cart-product">
+            <div class="cart-product-icon">🍲</div>
+            <div>
+              <strong>Racikan Saat Ini</strong>
+              <p>Belum masuk keranjang</p>
+            </div>
+          </div>
+
+          <div id="detailPesanan" aria-live="polite"></div>
+
+          <div class="price-row">
+            <span>Harga per porsi</span>
+            <strong id="hargaPerPorsi">Rp8.000</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Jumlah</span>
+            <strong id="jumlahRingkasan">1 porsi</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Subtotal racikan</span>
+            <strong id="subtotalRacikan">Rp8.000</strong>
+          </div>
+
+          <button type="button" class="secondary-button add-button"
+                  id="tombolTambah">
+            ＋ Tambah ke Keranjang
+          </button>
+
+          <div class="cart-list-heading">
+            <h4>🧺 Keranjang</h4>
+            <span id="jumlahItem">0 racikan</span>
+          </div>
+
+          <div id="daftarKeranjang" aria-live="polite"></div>
+
+          <div class="cart-total">
+            <span>Total pembayaran</span>
+            <strong id="totalHarga">Rp0</strong>
+          </div>
+
+          <p class="cart-note">
+            Semua racikan di keranjang dikirim sekaligus dalam satu pesan.
+          </p>
+
+          <button type="button" class="primary-button checkout-button"
+                  id="tombolPesan">
+            Pesan via WhatsApp ↗
+          </button>
+
+          <button type="button" class="secondary-button"
+                  id="tombolReset">
+            Reset Semua
+          </button>
+
+          <div class="secure-note">❤️ Dibuat sesuai seleramu</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="review-section" id="ulasan">
+      <div class="section-heading">
+        <span class="eyebrow">CERITA PECINTA SEBLAK</span>
+        <h2>Ulasan Pelanggan ⭐</h2>
+        <p>Punya pengalaman menikmati seblak? Bagikan pendapatmu!</p>
+      </div>
+
+      <div class="review-layout">
+        <div class="rating-overview">
+          <span class="rating-number" id="rataRating">5.0</span>
+          <div class="rating-stars" id="bintangRata"
+               aria-label="Rating rata-rata">★★★★★</div>
+          <p id="jumlahUlasan">Belum ada ulasan</p>
+          <div class="rating-bar-note">
+            Rating dihitung dari ulasan yang tersimpan di browser ini.
+          </div>
+        </div>
+
+        <div class="review-form-card">
+          <h3>💬 Tulis Ulasanmu</h3>
+          <p class="review-help">
+            Bagaimana pengalamanmu? Berikan rating dan komentar.
+          </p>
+
+          <form id="formUlasan">
+            <label class="field-label" for="namaUlasan">
+              Nama
+            </label>
+            <input class="text-input" id="namaUlasan"
+                   type="text" maxlength="50"
+                   placeholder="Nama kamu" required>
+
+            <span class="field-label">Rating kamu</span>
+            <div class="star-picker" role="radiogroup"
+                 aria-label="Pilih rating">
+              <input type="radio" id="star5" name="rating"
+                     value="5" checked>
+              <label for="star5" title="5 bintang">★</label>
+
+              <input type="radio" id="star4" name="rating"
+                     value="4">
+              <label for="star4" title="4 bintang">★</label>
+
+              <input type="radio" id="star3" name="rating"
+                     value="3">
+              <label for="star3" title="3 bintang">★</label>
+
+              <input type="radio" id="star2" name="rating"
+                     value="2">
+              <label for="star2" title="2 bintang">★</label>
+
+              <input type="radio" id="star1" name="rating"
+                     value="1">
+              <label for="star1" title="1 bintang">★</label>
+            </div>
+
+            <label class="field-label" for="komentar">
+              Ulasan
+            </label>
+            <textarea class="text-input" id="komentar"
+                      rows="4" maxlength="500"
+                      placeholder="Ceritakan pendapatmu tentang seblak ini..."
+                      required></textarea>
+
+            <button class="primary-button review-submit"
+                    type="submit">
+              Kirim Ulasan ✨
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="reviews-heading">
+        <h3>Ulasan Terbaru</h3>
+        <span id="labelJumlahReview">0 ulasan</span>
+      </div>
+
+      <div class="reviews-list" id="daftarUlasan">
+        <p class="empty-reviews">
+          Belum ada ulasan. Jadilah yang pertama berbagi pengalaman!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="brand footer-brand">
+      🌶️ Seblak<span class="brand-accent">Mantul</span>
+    </a>
+    <p>Racik sendiri, nikmati sendiri, puas setiap hari.</p>
+    <small>© 2026 Seblak Mantul. Website demonstrasi pemesanan.</small>
+  </footer>
+
+</body>
+</html>
